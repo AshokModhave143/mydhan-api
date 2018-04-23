@@ -1,0 +1,10 @@
+{
+	"serverPort": 4040,
+	"logLevel": "debug",
+	"logDir": "log",
+	"mongoUrl": "***REMOVED***",
+	"session_secret": "MyDhan Secrete",
+	"mongoUrlLocal_host": "mongodb://localhost:27017/mydhan",
+	"mongoUrlLocal_dev": "***REMOVED***",
+	"mongoUrlLocal_uat": "***REMOVED***"
+}
