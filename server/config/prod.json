@@ -1,7 +1,0 @@
-{
-    "serverPort": 8080,
-    "logLevel": "info",
-    "logDir": "log",
-    "mongoUrl": "mongodb://localhost/goh",
-    "session_secret": "The game of happyness"
-}

@@ -1,14 +1,15 @@
-const ENV = "dev";
-//Options
-//dev, prod
-var path = "./config/" + ENV;
-var config = require(path);
-console.log("Picking " + ENV + " credentials");
+const dotenv = require("dotenv").config();
 
-exports.getConfig = function() {
-  return config;
+if (dotenv.error) {
+  throw dotenv.error;
+}
+
+console.log(dotenv.parsed);
+
+exports.getConfig = function () {
+  return process.env;
 };
 
-exports.mailConfig = function() {
+exports.mailConfig = function () {
   return {};
 };

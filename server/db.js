@@ -4,10 +4,10 @@ const chalk = require("chalk");
 const config = require("./config.js");
 const configVals = config.getConfig();
 
-var getConnection = function() {
+var getConnection = function () {
   const mongoUrl = configVals.mongoUrl;
 
-  return mongoose.connect(mongoUrl, function(err) {
+  return mongoose.connect(mongoUrl, function (err) {
     // Log Error
     logger.info("Inside connectToMongoDB MongoDB");
     if (err) {
